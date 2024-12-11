@@ -86,7 +86,7 @@ class Visitor():
 
     def ride(self,attraction):
         print(f'{self._name} wants to ride {attraction._name}')
-        attraction.is_eligible(self._height) ##### this is broken#####
+        attraction.is_eligible(self._height)
         attraction.is_eligible(self._age)
 
     
@@ -97,7 +97,7 @@ visitor1 = Visitor('Fathima',3,100)
 
 visitor1.ride(dragonCoaster)
 visitor1.ride(merryGoRound)
-dragonCoaster.open_attraction()
+#dragonCoaster.open_attraction()
 merryGoRound.open_attraction()
 dragonCoaster.start()
 merryGoRound.start()
